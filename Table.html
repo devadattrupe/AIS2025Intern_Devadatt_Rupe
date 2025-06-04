@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Styled Table</title>
+  <style>
+    table {
+      width: 60%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #f9f9f9;
+    }
+    caption {
+      font-weight: bold;
+      font-size: 1.3em;
+      padding: 10px;
+    }
+    thead {
+      background-color: #add8e6;
+    }
+    tfoot {
+      background-color: #e0e0e0;
+      font-style: italic;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 8px 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Employee Details</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Amit</td>
+        <td>Marketing</td>
+        <td>Mumbai</td>
+      </tr>
+      <tr>
+        <td>Neha</td>
+        <td>HR</td>
+        <td>Delhi</td>
+      </tr>
+      <tr>
+        <td>Ravi</td>
+        <td>Finance</td>
+        <td>Bangalore</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Total Employees: 3</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
