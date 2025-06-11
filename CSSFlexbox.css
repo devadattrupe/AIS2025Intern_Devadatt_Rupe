@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 2;
+  min-width: 300px;
+  background-color: #e4e4e4;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 20px;
+}
