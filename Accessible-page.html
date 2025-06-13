@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Webpage</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    nav a {
+      margin-right: 10px;
+    }
+    input, button, textarea, select {
+      margin-bottom: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation with ARIA -->
+<nav role="navigation" aria-label="Main Navigation">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<h1 id="home">Welcome to Accessible Web</h1>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>This section describes the mission of our website.</p>
+</section>
+
+<!-- Form with proper labels -->
+<section id="contact" role="form" aria-label="Contact Form">
+  <h2>Contact Us</h2>
+  <form>
+    <label for="username">Full Name:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="useremail">Email:</label>
+    <input type="email" id="useremail" name="useremail" required>
+
+    <label for="usermsg">Message:</label>
+    <textarea id="usermsg" name="usermsg" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Accessible Site</p>
+</footer>
+
+</body>
+</html>
