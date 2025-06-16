@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas Drawing App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 30px;
+    }
+    canvas {
+      border: 2px solid black;
+      cursor: crosshair;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Draw on the Canvas!</h1>
+
+<canvas id="drawingCanvas" width="500" height="400"></canvas>
+<br>
+<button onclick="clearCanvas()">Clear Canvas</button>
+
+<script>
+  const canvas = document.getElementById('drawingCanvas');
+  const ctx = canvas.getContext('2d');
+  let isDrawing = false;
+
+  canvas.addEventListener('mousedown', () => {
+    isDrawing = true;
+    ctx.beginPath();
+  });
+
+  canvas.addEventListener('mousemove', (e) => {
+    if (isDrawing) {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      ctx.lineTo(x, y);
+      ctx.stroke();
+    }
+  });
+
+  canvas.addEventListener('mouseup', () => {
+    isDrawing = false;
+  });
+
+  function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+</script>
+
+</body>
+</html>
