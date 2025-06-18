@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery with Lightbox</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    figure {
+      margin: 0;
+      width: 200px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    /* Lightbox Styling */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Photo Gallery</h1>
+  <div class="gallery">
+    <figure>
+      <a href="#img1"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="river-forest"></a>
+      <figcaption>River-Forest</figcaption>
+    </figure>
+    <figure>
+      <a href="#img2"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mountain Lake" width="300"></a>
+      <figcaption>Mountain Lake</figcaption>
+    </figure>
+    <figure>
+      <a href="#img3"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Sea" width="300"></a>
+      <figcaption>Sea</figcaption>
+    </figure>
+  </div>
+
+  <!-- Lightbox views -->
+  <div id="img1" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="river-forest">
+  </div>
+  <div id="img2" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mountain Lake" width="300">
+  </div>
+  <div id="img3" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Sea" width="300">
+  </div>
+
+</body>
+</html>
+
