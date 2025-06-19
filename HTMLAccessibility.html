@@ -7,51 +7,140 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 20px;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
     }
-    header, nav, main, footer {
-      margin-bottom: 20px;
+
+    a.skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
     }
+
+    a.skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 10px;
+      padding: 8px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      z-index: 1000;
+    }
+
+    header, main, footer {
+      padding: 20px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #007BFF;
+    }
+
     img {
       max-width: 100%;
-      height: auto;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <!--  Skip to Main Content link (for screen reader and keyboard users) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!--  Header with Navigation -->
+  <header role="banner">
     <h1>Accessible HTML Page</h1>
-    <nav>
-      <a href="#home">Home</a> |
-      <a href="#about">About</a>
+    <nav role="navigation" aria-label="Main Navigation">
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section aria-labelledby="gallery-heading">
+  <!--  Main Content Area -->
+  <main id="main-content" role="main">
+
+    <!--  Image Gallery with alt text -->
+    <section id="gallery" aria-labelledby="gallery-heading">
       <h2 id="gallery-heading">Gallery</h2>
-      <p>Sunset over hills with colorful sky — Calm lake view.</p>
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Sunset over hills with lake and colorful sky" />
+      <p>Sunset over hills with colorful sky — Calm lake view</p>
+      <img 
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" 
+        alt="Beautiful sunset over calm lake with surrounding hills and clear sky"
+      />
     </section>
 
-    <section aria-labelledby="form-heading">
-      <h2 id="form-heading">Contact Form</h2>
+    <!-- Contact Form with proper labels -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Form</h2>
       <form aria-label="Contact Form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" aria-required="true" />
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          required 
+          aria-required="true" 
+        />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" aria-required="true" />
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          required 
+          aria-required="true" 
+        />
 
         <button type="submit">Submit</button>
       </form>
     </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 Accessible Site</p>
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Accessible Site. All rights reserved.</p>
   </footer>
 
 </body>
