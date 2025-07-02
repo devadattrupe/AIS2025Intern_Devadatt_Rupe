@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript Basics - DOM & Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f8f8f8;
+      text-align: center;
+    }
+
+    #message {
+      font-size: 24px;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    button {
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript DOM Manipulation</h1>
+
+  <div id="message">Click the button to change this text!</div>
+
+  <button onclick="changeText()">Change Text</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
