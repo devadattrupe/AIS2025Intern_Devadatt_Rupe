@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Canvas Drawing App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f8f8;
+      padding: 30px;
+    }
+
+    canvas {
+      border: 2px solid #333;
+      background-color: #fff;
+      cursor: crosshair;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Canvas Drawing App</h1>
+
+  <canvas id="drawCanvas" width="500" height="400"></canvas><br>
+  <button id="clearBtn">Clear Canvas</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
