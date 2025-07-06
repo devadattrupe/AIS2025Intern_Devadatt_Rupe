@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lightbox Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Image Lightbox Gallery</h1>
+
+  <div class="gallery">
+    <figure>
+      <img src="image1.jpg" alt="Nature">
+      <figcaption>Nature</figcaption>
+    </figure>
+    <figure>
+      <img src="image3.jpg" alt="River">
+      <figcaption>River</figcaption>
+    </figure>
+    <figure>
+       <img src="image2.jpg" alt="Bike">
+      <figcaption>Bike</figcaption>
+    </figure>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="closeBtn">&times;</span>
+    <img id="lightboxImg" src="" alt="">
+    <p id="caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
