@@ -6,7 +6,7 @@ This repository contains the completed assignments for **Week 1** and **Week 2**
 
 ---
 
-## 📅 Week 1: HTML Essentials & Web Features
+##  Week 1: HTML Essentials & Web Features
 
 ### Day 1:
 - **Task 1: Basic Structure and Elements**  
@@ -59,7 +59,7 @@ This repository contains the completed assignments for **Week 1** and **Week 2**
 
 ---
 
-## 🎨 Week 2: CSS Styling and JavaScript Basics
+## Week 2: CSS Styling and JavaScript Basics
 
 ### Day 1:
 - **Task 1: External CSS Styling**  
@@ -112,7 +112,7 @@ This repository contains the completed assignments for **Week 1** and **Week 2**
 
 ---
 
-## 👨‍💻 Technologies Used:
+## Technologies Used:
 - **HTML5**, **CSS3**, **JavaScript (ES6)**  
 - **HTML5 APIs (Canvas, Geolocation, Local Storage, Fetch)**  
 - **Responsive Web Design with Media Queries & Flexbox/Grid**  
@@ -120,13 +120,13 @@ This repository contains the completed assignments for **Week 1** and **Week 2**
 
 ---
 
-## 🙏 Credits
+## Credits
 
 Special thanks to **ChatGPT by OpenAI** for helping me understand and implement many of the web development concepts used throughout this internship. This AI-based assistant provided explanations, code examples, and structure guidance.
 
 ---
 
-📌 _Submitted by_: **Devadatt Ramkrishna Rupe**  
-🗓️ _Internship Period_: **2025**  
-🏢 _Internship Organization_: **AIS Web Development Program**
+Submitted by_: **Devadatt Ramkrishna Rupe**  
+🗓Internship Period_: **2025**  
+Internship Organization_: **AIS Web Development Program**
 
