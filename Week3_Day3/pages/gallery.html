@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery | My Skills Playground</title>
+  <link rel="stylesheet" href="../css/gallery.css" />
+  <script defer src="../js/gallery.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>My Project Gallery</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="gallery">
+    <figure>
+      <img src="../images/river.jpg" alt="River View" />
+      <figcaption>Beautiful River</figcaption>
+    </figure>
+    <figure>
+      <img src="../images/gta-bike.jpg" alt="GTA Bike Ride" />
+      <figcaption>GTA Bike Scene</figcaption>
+    </figure>
+    <figure>
+      <img src="../images/sunset.jpg" alt="Sunset View" />
+      <figcaption>Sunset over the hills</figcaption>
+    </figure>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded view" />
+    <p id="caption"></p>
+  </div>
+
+</body>
+</html>
