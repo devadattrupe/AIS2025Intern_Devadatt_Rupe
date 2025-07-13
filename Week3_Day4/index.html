@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Features</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to content</a>
+  <header>
+    <h1>Interactive Features Page</h1>
+    <nav role="navigation">
+      <a href="#faq">Go to FAQ</a>
+    </nav>
+  </header>
+
+  <main id="mainContent" role="main">
+    <section style="height: 1000px;">
+      <h2>Scroll down to test Back-to-Top</h2>
+      <p>Dummy content here...</p>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ Section</h2>
+      <div class="faq">
+        <button class="faq-question">What is this project about?</button>
+        <div class="faq-answer">It’s a portfolio project made during internship.</div>
+
+        <button class="faq-question">What tech stack is used?</button>
+        <div class="faq-answer">HTML, CSS, JS and GitHub Pages.</div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" aria-label="Back to top">⬆</button>
+
+</body>
+</html>
